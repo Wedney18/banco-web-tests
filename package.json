@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
+    "test": "cypress run --env URL=http://localhost:4000",
+    "test-qa": "cypress run --env URL=http://qaenvironment.juliodelima.com.br",
+    "test-prod": "cypress run --env URL=http://www.juliodelima.com.br",
     "cy:headed": "cypress run --headed",
     "cy:open": "cypress open"
   },
@@ -19,7 +21,7 @@
   },
   "homepage": "https://github.com/Wedney18/banco-web-tests#readme",
   "description": "",
-  "devDependencies": {
-    "cypress": "^14.5.1"
+  "dependencies": {
+    "cypress": "^14.5.2"
   }
 }
